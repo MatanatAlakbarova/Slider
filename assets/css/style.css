@@ -1,0 +1,181 @@
+a {
+  text-decoration: none;
+  color: #663a3a;
+}
+
+a:hover {
+  color: #221919;
+}
+
+.intro {
+  overflow: hidden;
+  display: none;
+  border: 30px solid #4e2c2c;
+  height: 100%;
+  background-color: #f1d2d2;
+}
+
+.intro .welcome {
+  height: 10px;
+  text-align: center;
+  font-size: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  color: #216640;
+}
+
+.intro .gallery {
+  padding: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.intro .gallery .content {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.intro .gallery .content p {
+  color: #382727;
+  font-size: 18px;
+}
+
+.intro .gallery .content hr {
+  width: 80px;
+  margin: auto;
+}
+
+.intro .gallery img {
+  margin-left: 2px;
+  width: 300px;
+  height: 200px;
+  border: 18px solid rosybrown;
+}
+
+.intro .gallery img:hover {
+  border: 18px solid #7a4d4d;
+}
+
+.popup {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #bc8f8f91;
+  display: none;
+  z-index: 555;
+}
+
+.popup .inner {
+  position: relative;
+  border: 18px solid #dacfcf;
+}
+
+.popup .inner .close-icon {
+  cursor: pointer;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background-color: #6e3c3c;
+  border-radius: 50%;
+}
+
+.popup .inner .close-icon i {
+  color: white;
+  font-size: 25px;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.popup .inner .close-icon i:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+.popup .inner .arrows {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: absolute;
+  width: 100%;
+  top: 45%;
+}
+
+.popup .inner .arrows i {
+  cursor: pointer;
+  color: white;
+  font-size: 25px;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.popup .inner .arrows i:hover {
+  -webkit-transform: scale(1.8);
+          transform: scale(1.8);
+}
+
+.check {
+  overflow: hidden;
+  border: 30px solid #4e2c2c;
+  height: 100%;
+  padding: 20%;
+  background-color: #f1d2d2;
+}
+
+.check .check-input {
+  border: 10px solid #4e2c2c;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.check .check-input #myInput {
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  width: 75%;
+  padding: 20px;
+  float: left;
+  font-size: 16px;
+}
+
+.check .check-input .addBtn {
+  padding: 20px;
+  width: 25%;
+  background: #b98181;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  font-size: 16px;
+}
+
+.check .check-input .addBtn:hover {
+  background-color: #582929;
+  color: #fffefe;
+}
