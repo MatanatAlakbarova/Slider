@@ -31,24 +31,21 @@ popup.addEventListener("click", (e) => {
         closeImage();
     }
 });
-
 document.addEventListener("keydown", (e) => {
-    if (e.code === "Escape") {
-        closeImage();
+    switch (e.code) {
+        case "Escape":
+            closeImage();
+            break;
+        case "ArrowRight":
+            let nextImg = document.querySelector(".show-image")
+            nextImage(nextImg)
+            break;
+        case "ArrowLeft":
+            let previousImg = document.querySelector(".show-image")
+            previousImage(previousImg)
+            break;
     }
-});
-document.addEventListener("keydown", (e) => {
-    if (e.code === "ArrowRight") {
-        let nextImg = document.querySelector(".show-image")
-        nextImage(nextImg)
-    }
-});
-document.addEventListener("keydown", (e) => {
-    if (e.code === "ArrowLeft") {
-        let previousImg = document.querySelector(".show-image")
-        previousImage(previousImg)
-    }
-});
+})
 document.querySelector(".addBtn").addEventListener("click", () => {
     let inputValue = document.querySelector("#myInput").value;
     if (inputValue === "") {
